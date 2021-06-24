@@ -1,0 +1,18 @@
+Listening on port 8080
+http://192.168.0.102:8080
+[0mGET /assets/stylesheets/ftp.css [32m200 [0m95.423 ms - 13200[0m
+[0mGET /favicon.ico [33m404 [0m173.184 ms - 2475[0m
+[0mGET /ftp/Anime/Boku%20No%20Hero%20Academia/Season%202/ [32m200 [0m551.172 ms - 9556[0m
+[0mGET /assets/stylesheets/ftp.css [36m304 [0m11.467 ms - -[0m
+[0mGET /ftp/Anime/Boku%20No%20Hero%20Academia/ [32m200 [0m6.379 ms - 2882[0m
+[0mGET /ftp/Anime/Boku%20No%20Hero%20Academia/ [32m200 [0m5.841 ms - 2882[0m
+[0mGET /assets/stylesheets/ftp.css [36m304 [0m1.820 ms - -[0m
+[0mGET /ftp/Anime/ [32m200 [0m134.882 ms - 6119[0m
+[0mGET /assets/stylesheets/ftp.css [36m304 [0m1.379 ms - -[0m
+[0mGET /ftp [36m301 [0m3.542 ms - 173[0m
+[0mGET /ftp/ [32m200 [0m5.941 ms - 3136[0m
+[0mGET /assets/stylesheets/ftp.css [36m304 [0m1.299 ms - -[0m
+[0mGET /ftp/Source [36m301 [0m1.187 ms - 187[0m
+[0mGET /ftp/Source/ [32m200 [0m5.990 ms - 3500[0m
+[0mGET /assets/stylesheets/ftp.css [36m304 [0m1.295 ms - -[0m
+[0mGET /ftp/Source/Genshin%20Impact%202022-05-20%2012-13-23.mp4 [32m200 [0m2.796 ms - 23219210[0m

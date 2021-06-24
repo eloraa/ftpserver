@@ -1,0 +1,11 @@
+<service>
+  <id>ftp</id>
+  <name>FTPServer</name>
+  <description>This service runs FTP Server On Local IPv4 Address.</description>
+  <executable>node</executable>
+  <logpath>E:\FTPServer\WinSW</logpath>
+  <workingdirectory>E:\FTPServer</workingdirectory>
+  <arguments>E:\FTPServer\bin\www</arguments>
+  <env name="PORT" value="8080"/>
+  <log mode="roll"></log>
+</service>

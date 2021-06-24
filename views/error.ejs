@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title><%= error.status %> | <%= message %></title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href='/assets/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="root">
+    <header>
+      <a href="/<%= path[0] !== '' ? path[0] : path[1] %>"><div class="logo">FTP</div></a>
+      <div class="navbar">
+        
+      <div class="hamburger" id="hamburger">
+
+        <div class="hamburger-bg"></div><!--- .hamburger-bg --->
+  
+          <!---/ Open Menu /--->
+  
+          <div class="header__hamburger">
+            <span class="hamburger_bar-body">
+              <span class="hamburger_bar hamburger_bar--1"></span><!--- .hamburger_bar --->
+            </span><!--- .hamburger_bar-body --->
+            <span class="hamburger_bar-body">
+              <span class="hamburger_bar hamburger_bar--2"></span><!--- .hamburger_bar --->
+            </span><!--- .hamburger_bar-body --->
+            <span class="hamburger_bar-body">
+              <span class="hamburger_bar hamburger_bar--3"></span><!--- .hamburger_bar --->
+            </span><!--- .hamburger_bar-body --->
+          </div><!--- .header__hamburger --->
+  
+          <!---/ Close Menu /---->
+          <div class="header__close-circles">
+            <span class="close-circle"></span><!--- .close-cirle --->
+            <span class="close-circle"></span><!--- .close-cirle --->
+          </div><!--- .header__close-circles --->
+  
+      </div>
+      <nav>
+        <ul>
+          <a href="/<%= path[0] !== '' ? path[0] : path[1] %>"><li>Home</li></a>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+    <div class='hello' style='color: #111'><%= error.status %></div>
+    <div class='hello' style='color: #ddd'><%= error.status %></div>
+    <div class='hello' style='color: #fff'><%= message %></div>
+    <div class='hello' style='color: #1851f1'><%= message %></div>
+
+
+    <footer>
+        <p class="year">&copy;2021</p>
+        <p class="credits">By Neon</p>
+    </footer>
+
+  </div>
+
+  <script src="/assets/javascripts/main.js"></script>
+</body>
+
+</html>

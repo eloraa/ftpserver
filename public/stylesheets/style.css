@@ -1,0 +1,736 @@
+* { box-sizing: border-box; margin: 0; padding: 0; user-select: none }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+a,
+a:hover {
+  color: #111;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+svg,
+img,
+video {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+header .logo {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  padding-top: 100px;
+  transform: translateX(100%);
+  transition: transform 300ms cubic-bezier(.215, .61, .355, 1);
+}
+html.is-hamburger-active header nav {
+  transform: translateX(0);
+}
+header nav ul li{
+  padding: 10px 90px 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 200ms ease-out,
+              color 200ms ease-out;
+}
+header nav ul li:hover {
+  color: #fff;
+  background: #111;
+}
+
+
+/* ------ 1.3 HAMBURGER MENU ------ */
+.hamburger {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding-top: 20px;
+  z-index: 222;
+  cursor: pointer
+}
+
+/* HAMBURGER BACKGROUND */
+.hamburger-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hamburger-bg::after,
+.hamburger-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  opacity: 0
+}
+.hamburger-bg::before {
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+  box-shadow: inset 0 0 0 .453125em hsla(0, 0%, 100%, .2);
+  -webkit-transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), opacity .4s linear, -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+  transition: box-shadow .5s cubic-bezier(.215, .61, .355, 1), opacity 4s linear, -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+  transition: box-shadow .5s cubic-bezier(.215, .61, .355, 1), transform .5s cubic-bezier(.215, .61, .355, 1), opacity .4s linear;
+  transition: box-shadow .5s cubic-bezier(.215, .61, .355, 1), transform 5s cubic-bezier(.215, .61, .355, 1), opacity .4s linear, -webkit-transform .5s cubic-bezier(.215, .61, .355, 1)
+}
+.hamburger-bg::after {
+  background-color: #111;
+  opacity: 0s;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: opacity .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+  transition: opacity .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+  transition: transform .3s cubic-bezier(.215, .61, .355, 1), opacity .3s cubic-bezier(.215, .61, .355, 1);
+  transition: transform .3s cubic-bezier(.215, .61, .355, 1), opacity .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1)
+}
+.hamburger-bg::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  box-shadow: inset 0 0 0 .1875rem #111
+}
+.hamburger:not(.active) .hamburger-bg::before {
+  box-shadow: none;
+} 
+.hamburger:hover .hamburger-bg::after,
+.hamburger:hover .hamburger-bg::before{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2)
+}
+.hamburger:hover .hamburger-bg::before {
+  box-shadow: inset 0 0 0 5em hsla(0, 0%, 100%, .2);
+  -webkit-transition: box-shadow .5s cubic-bezier(.86, 0, .07, 1), -webkit-transform .5s cubic-bezier(.23, 1, .32, 1);
+  transition: box-shadow .5s cubic-bezier(.86, 0, .07, 1), -webkit-transform .5s cubic-bezier(.23, 1, .32, 1);
+  transition: box-shadow .5s cubic-bezier(.86, 0, .07, 1), transform .5s cubic-bezier(.23, 1, .32, 1);
+  transition: box-shadow .5s cubic-bezier(.86, 0, .07, 1), transform .5s cubic-bezier(.23, 1, .32, 1), -webkit-transform .5s cubic-bezier(.23, 1, .32, 1)
+}
+.hamburger:hover .hamburger-bg::after {
+  opacity: 1;
+  -webkit-transition: opacity .5s cubic-bezier(.215, .61, .355, 1) .2s, -webkit-transform .5s cubic-bezier(.23, 1, .32, 1) .2s;
+  transition: opacity .5s cubic-bezier(.215, .61, .355, 1) .2s, -webkit-transform .5s cubic-bezier(.23, 1, .32, 1) .2s;
+  transition: transform .5s cubic-bezier(.23, 1, .32, 1) .2s, opacity .5s cubic-bezier(.215, .61, .355, 1) .2s;
+  transition: transform .5s cubic-bezier(.23, 1, .32, 1) .2s, opacity .5s cubic-bezier(.215, .61, .355, 1) .2s, -webkit-transform .5s cubic-bezier(.23, 1, .32, 1) .2s
+}
+
+/* HAMBURGER */
+.header__hamburger .hamburger_bar-body {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  transform: scale(1);
+  transition: transform 0.6s ease .5s, -webkit-transform 0.6s ease .5s
+}
+
+.hamburger_bar-body:last-child { 
+  margin-bottom: 0px
+}
+.hamburger_bar-body .hamburger_bar--1::after,
+.hamburger_bar-body .hamburger_bar--1::before {
+  animation: 2s cubic-bezier(0.57, 0.05, 0.52, 0.96) 0s infinite normal none running line-phase-menu
+}
+
+.hamburger_bar-body .hamburger_bar--2::after,
+.hamburger_bar-body .hamburger_bar--2::before {
+  animation: 2s cubic-bezier(0.57, 0.05, 0.52, 0.96) 0.18s infinite normal none running line-phase-menu
+}
+
+.hamburger_bar-body .hamburger_bar--3::after,
+.hamburger_bar-body .hamburger_bar--3::before {
+  animation: 2s cubic-bezier(0.57, 0.05, 0.52, 0.96) 0.36s infinite normal none running line-phase-menu
+}
+
+.hamburger_bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.hamburger_bar::after,
+.hamburger_bar::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  -webkit-transition: background .5s cubic-bezier(.23, 1, .32, 1) .2s;
+  transition: background .5s cubic-bezier(.23, 1, .32, 1) .2s;
+  transition: background cubic-bezier(.215, .61, .355, 1) .2s;
+  transition: background cubic-bezier(.215, .61, .355, 1) .2s, -webkit-transform .5s cubic-bezier(.23, 1, .32, 1) .2s
+}
+
+.hamburger_bar::before {
+  right: 123%
+}
+
+.hamburger_bar::after {
+  left: 0px 
+}
+.hamburger:hover .hamburger_bar::after,
+.hamburger:hover .hamburger_bar::before {
+  background: #fff
+}
+html.is-hamburger-active .header__hamburger {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s
+}
+
+/* CLOSE MENU */
+.header__close-circles {
+  -webkit-transform: rotate(45deg) scale(0);
+  transform: rotate(45deg) scale(0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: -webkit-transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1s cubic-bezier(.23, 1, .32, 1), -webkit-transform .5s cubic-bezier(.23, 1, .32, 1);
+  -webkit-transform-origin: center center;
+  transform-origin: center center
+}
+.header__close-circles,
+.header__close-circles .close-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto
+}
+
+.header__close-circles .close-circle::after,
+.header__close-circles .close-circle::before {
+  content: "";
+  top: 47%;
+  left: 33%;
+  position: absolute;
+  display: block;
+  background: #111
+}
+.header__close-circles .close-circle::before {
+  transform: rotate(90deg);
+  width: 20px;
+  height: 2px;
+  background: #111
+}
+.header__close-circles .close-circle::after {
+  width: 20px;
+  height: 2px;
+  background: #111
+}
+.header__close-circles .close-circle:last-child::after,
+.header__close-circles .close-circle:last-child::before {
+  background: #fff
+}
+.header__close-circles .close-circle:last-child::before {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0)
+}
+
+.header__close-circles .close-circle:last-child::after {
+  -webkit-transform: scaleX(0) rotate(90deg);
+  transform: scaleX(0) rotate(90deg);
+  -webkit-transform-origin: center;
+  transform-origin: center
+}
+html.is-hamburger-active .hamburger:hover .header__close-circles {
+  -webkit-transform: rotate(405deg) scale(1);
+  transform: rotate(405deg) scale(1);
+  -webkit-transition: -webkit-transform 1.4s cubic-bezier(.23, 1, .32, 1);
+  transition: -webkit-transform 1.4s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1.4s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1.4s cubic-bezier(.23, 1, .32, 1), -webkit-transform 1.4s cubic-bezier(.23, 1, .32, 1)
+}
+
+html.is-hamburger-active .hamburger:hover .close-circle:last-child::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: transform .5s cubic-bezier(.215, .61, .355, 1) .3s, -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s
+}
+html.is-hamburger-active .hamburger:hover .close-circle:last-child::after {
+  -webkit-transform: scaleX(1) rotate(90deg);
+  transform: scaleX(1) rotate(90deg);
+  -webkit-transition: -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: transform .5s cubic-bezier(.215, .61, .355, 1) .3s;
+  transition: transform .5s cubic-bezier(.215, .61, .355, 1) .3s, -webkit-transform .5s cubic-bezier(.215, .61, .355, 1) .3s
+}
+html.is-hamburger-active .header__close-circles{
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: -webkit-transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+  transition: transform 1s cubic-bezier(.23, 1, .32, 1), -webkit-transform .5s cubic-bezier(.23, 1, .32, 1)
+}
+
+.directory {
+    font-size: 12px;
+    padding: 0px 0 20px 40px;
+    letter-spacing: 1px;
+}
+.content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.content ul li a {
+  padding: 15px 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+.content ul li a:hover,
+.content ul li a:focus {
+  background: #111;
+}
+.content ul li a:hover .name,
+.content ul li a:focus .name,
+.content ul li a:hover .icon,
+.content ul li a:focus .icon {
+  color: #fff;
+}
+.content ul li .icon {
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  color: #111;
+  transition: color 200ms ease;
+}
+.content ul li .name {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 200ms ease;
+}
+.content ul li .size {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.content .size,
+.content .date {
+    display: none;
+}
+
+/* ------ 1.9 FOOTER ------ */
+
+footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #f8f8f8;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-top: 1px solid #ddd;
+}
+.welcome {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.glitch {
+  position: relative;
+  margin: 0 auto;
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  transform: scale3d(1, 1, 1);
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #111;
+  clip: rect(0, 900px, 0, 0);
+}
+.glitch::before {
+  left: -14px;
+  text-shadow: 1px 0 green;
+  animation: glitch-effect 3s infinite linear alternate-reverse;
+}
+.glitch::after {
+  left: -6px;
+  text-shadow: -1px 0 red;
+  animation: glitch-effect 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes glitch-effect {
+  0% {
+    clip: rect(82px, 9999px, 56px, 0);
+  }
+  4% {
+    clip: rect(79px, 9999px, 93px, 0);
+  }
+  8% {
+    clip: rect(51px, 9999px, 57px, 0);
+  }
+  12% {
+    clip: rect(71px, 9999px, 1px, 0);
+  }
+  16% {
+    clip: rect(35px, 9999px, 69px, 0);
+  }
+  20% {
+    clip: rect(81px, 9999px, 61px, 0);
+  }
+  24% {
+    clip: rect(96px, 9999px, 61px, 0);
+  }
+  28% {
+    clip: rect(15px, 9999px, 52px, 0);
+  }
+  32% {
+    clip: rect(96px, 9999px, 38px, 0);
+  }
+  36% {
+    clip: rect(3px, 9999px, 46px, 0);
+  }
+  40% {
+    clip: rect(21px, 9999px, 4px, 0);
+  }
+  44% {
+    clip: rect(57px, 9999px, 91px, 0);
+  }
+  48% {
+    clip: rect(100px, 9999px, 52px, 0);
+  }
+  52% {
+    clip: rect(95px, 9999px, 83px, 0);
+  }
+  56% {
+    clip: rect(47px, 9999px, 86px, 0);
+  }
+  60% {
+    clip: rect(98px, 9999px, 86px, 0);
+  }
+  64% {
+    clip: rect(38px, 9999px, 59px, 0);
+  }
+  68% {
+    clip: rect(100px, 9999px, 73px, 0);
+  }
+  72% {
+    clip: rect(68px, 9999px, 90px, 0);
+  }
+  76% {
+    clip: rect(3px, 9999px, 88px, 0);
+  }
+  80% {
+    clip: rect(76px, 9999px, 29px, 0);
+  }
+  84% {
+    clip: rect(11px, 9999px, 66px, 0);
+  }
+  88% {
+    clip: rect(9px, 9999px, 11px, 0);
+  }
+  92% {
+    clip: rect(100px, 9999px, 58px, 0);
+  }
+  96% {
+    clip: rect(5px, 9999px, 61px, 0);
+  }
+  100% {
+    clip: rect(48px, 9999px, 69px, 0);
+  }
+}
+
+@keyframes glitch-effect {
+  0% {
+    clip: rect(82px, 9999px, 56px, 0);
+  }
+  4% {
+    clip: rect(79px, 9999px, 93px, 0);
+  }
+  8% {
+    clip: rect(51px, 9999px, 57px, 0);
+  }
+  12% {
+    clip: rect(71px, 9999px, 1px, 0);
+  }
+  16% {
+    clip: rect(35px, 9999px, 69px, 0);
+  }
+  20% {
+    clip: rect(81px, 9999px, 61px, 0);
+  }
+  24% {
+    clip: rect(96px, 9999px, 61px, 0);
+  }
+  28% {
+    clip: rect(15px, 9999px, 52px, 0);
+  }
+  32% {
+    clip: rect(96px, 9999px, 38px, 0);
+  }
+  36% {
+    clip: rect(3px, 9999px, 46px, 0);
+  }
+  40% {
+    clip: rect(21px, 9999px, 4px, 0);
+  }
+  44% {
+    clip: rect(57px, 9999px, 91px, 0);
+  }
+  48% {
+    clip: rect(100px, 9999px, 52px, 0);
+  }
+  52% {
+    clip: rect(95px, 9999px, 83px, 0);
+  }
+  56% {
+    clip: rect(47px, 9999px, 86px, 0);
+  }
+  60% {
+    clip: rect(98px, 9999px, 86px, 0);
+  }
+  64% {
+    clip: rect(38px, 9999px, 59px, 0);
+  }
+  68% {
+    clip: rect(100px, 9999px, 73px, 0);
+  }
+  72% {
+    clip: rect(68px, 9999px, 90px, 0);
+  }
+  76% {
+    clip: rect(3px, 9999px, 88px, 0);
+  }
+  80% {
+    clip: rect(76px, 9999px, 29px, 0);
+  }
+  84% {
+    clip: rect(11px, 9999px, 66px, 0);
+  }
+  88% {
+    clip: rect(9px, 9999px, 11px, 0);
+  }
+  92% {
+    clip: rect(100px, 9999px, 58px, 0);
+  }
+  96% {
+    clip: rect(5px, 9999px, 61px, 0);
+  }
+  100% {
+    clip: rect(48px, 9999px, 69px, 0);
+  }
+}
+
+
+
+.hello {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation-name: wave;
+          animation-name: wave;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.hello:nth-of-type(1) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.hello:nth-of-type(2) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.hello:nth-of-type(3) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+.hello:nth-of-type(4) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+@-webkit-keyframes wave {
+  40%, 50% {
+    transform: translate(-50%, -65%) scale(1.05);
+  }
+  0%, 90%, 100% {
+    transform: translate(-50%, -45%) scale(0.95);
+  }
+}
+
+@keyframes wave {
+  40%, 50% {
+    transform: translate(-50%, -65%) scale(1.05);
+  }
+  0%, 90%, 100% {
+    transform: translate(-50%, -45%) scale(0.95);
+  }
+}
+
+/* ------ 2.0 ANIMATION ------ */
+
+@-webkit-keyframes line-phase-menu { 
+  0% {
+   transform: translateX(0px) 
+   }
+  100% {
+   transform: translateX(123%) 
+   }
+}
+
+@keyframes line-phase-menu { 
+  0% { transform: translateX(0px) 
+  }
+  100% { transform: translateX(123%) 
+  }
+}
+
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+@-webkit-keyframes bar {
+  0% {
+    height:4px;
+    }
+    50% {
+      height:14px;
+    }
+    100% {
+      height:4px;
+    }
+}
+
+@keyframes bar {
+  0% {
+    height:4px;
+    }
+    50% {
+      height:14px;
+    }
+    100% {
+      height:4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .content ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+}
+
+@media screen and (max-width: 498px) {
+  header nav {
+    width: 100%;
+    z-index: 99;
+  }
+  .content ul {
+    grid-template-columns: auto;
+    gap: 0;
+  }
+  .content ul li a {
+    margin: 10px;
+    font-size: 12px;
+  }
+  .content .file .size {
+    font-size: 10px;
+  }
+
+}

@@ -1,0 +1,299 @@
+2022-03-16 21:16:50,124 DEBUG - Starting WinSW in console mode
+2022-03-16 21:16:55,947 DEBUG - Starting WinSW in console mode
+2022-03-16 21:16:56,016 INFO  - Installing service 'FTPServer (ftp)'...
+2022-03-16 21:16:56,162 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-03-16 21:18:29,058 DEBUG - Starting WinSW in service mode
+2022-03-16 21:18:29,315 INFO  - Starting node N:\FTPServer\bin\www
+2022-03-16 21:18:29,677 INFO  - Started process 6904
+2022-03-16 21:18:29,725 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:18:33,291 DEBUG - Starting WinSW in service mode
+2022-03-16 21:18:33,518 INFO  - Starting node N:\FTPServer\bin\www
+2022-03-16 21:18:33,900 INFO  - Started process 3208
+2022-03-16 21:18:33,921 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:19:35,759 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:39,553 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:39,589 INFO  - Uninstalling service 'FTPServer (ftp)'...
+2022-03-16 21:19:39,595 INFO  - Service 'FTPServer (ftp)' was uninstalled successfully.
+2022-03-16 21:19:43,384 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:46,061 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:46,097 INFO  - Installing service 'FTPServer (ftp)'...
+2022-03-16 21:19:46,124 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-03-16 21:19:49,985 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:52,932 DEBUG - Starting WinSW in console mode
+2022-03-16 21:19:53,529 INFO  - Starting service 'FTPServer (ftp)'...
+2022-03-16 21:19:54,169 DEBUG - Starting WinSW in service mode
+2022-03-16 21:19:54,201 INFO  - Service 'FTPServer (ftp)' started successfully.
+2022-03-16 21:19:54,322 INFO  - Starting node ..\bin\www
+2022-03-16 21:19:54,759 INFO  - Started process 532
+2022-03-16 21:19:54,793 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:20:06,627 DEBUG - Starting WinSW in service mode
+2022-03-16 21:20:06,763 INFO  - Starting node ..\bin\www
+2022-03-16 21:20:07,163 INFO  - Started process 4332
+2022-03-16 21:20:07,189 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:21:20,102 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:22,914 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:22,949 INFO  - Uninstalling service 'FTPServer (ftp)'...
+2022-03-16 21:21:22,957 INFO  - Service 'FTPServer (ftp)' was uninstalled successfully.
+2022-03-16 21:21:25,928 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:29,010 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:29,079 INFO  - Installing service 'FTPServer (ftp)'...
+2022-03-16 21:21:29,121 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-03-16 21:21:35,899 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:38,985 DEBUG - Starting WinSW in console mode
+2022-03-16 21:21:39,032 INFO  - Starting service 'FTPServer (ftp)'...
+2022-03-16 21:21:39,503 DEBUG - Starting WinSW in service mode
+2022-03-16 21:21:39,565 INFO  - Service 'FTPServer (ftp)' started successfully.
+2022-03-16 21:21:39,730 INFO  - Starting node E:\FTPServer\bin\www
+2022-03-16 21:21:40,112 INFO  - Started process 4800
+2022-03-16 21:21:40,131 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:22:40,342 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:43,098 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:43,134 INFO  - Uninstalling service 'FTPServer (ftp)'...
+2022-03-16 21:22:43,142 WARN  - Service 'FTPServer (ftp)' is started. It may be impossible to uninstall it.
+2022-03-16 21:22:43,143 INFO  - Service 'FTPServer (ftp)' was uninstalled successfully.
+2022-03-16 21:22:45,876 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:48,641 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:48,678 INFO  - Installing service 'FTPServer (ftp)'...
+2022-03-16 21:22:48,686 ERROR - A service with ID 'ftp' already exists.
+2022-03-16 21:22:48,727 FATAL - Failed to install the service. The specified service already exists.
+2022-03-16 21:22:52,471 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:55,252 DEBUG - Starting WinSW in console mode
+2022-03-16 21:22:55,291 INFO  - Starting service 'FTPServer (ftp)'...
+2022-03-16 21:22:55,319 FATAL - Cannot start service 'ftp' on computer '.'.
+2022-03-16 21:23:49,016 INFO  - Stopping ftp
+2022-03-16 21:23:49,016 DEBUG - ProcessKill 4800
+2022-03-16 21:23:49,018 DEBUG - Stopping process 4800...
+2022-03-16 21:23:49,051 DEBUG - Process 4800 canceled with code -1073741510.
+2022-03-16 21:23:49,055 INFO  - Finished ftp
+2022-03-16 21:24:11,202 DEBUG - Starting WinSW in console mode
+2022-03-16 21:24:13,958 DEBUG - Starting WinSW in console mode
+2022-03-16 21:24:13,990 INFO  - Installing service 'FTPServer (ftp)'...
+2022-03-16 21:24:14,015 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-03-16 21:24:55,708 DEBUG - Starting WinSW in service mode
+2022-03-16 21:24:55,943 INFO  - Starting node E:\FTPServer\bin\www
+2022-03-16 21:24:56,497 INFO  - Started process 1736
+2022-03-16 21:24:56,526 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-16 21:44:35,558 INFO  - Stopping ftp
+2022-03-16 21:44:35,883 DEBUG - ProcessKill 1736
+2022-03-16 21:44:36,497 DEBUG - Stopping process 1736...
+2022-03-16 21:44:38,769 DEBUG - Process 1736 canceled with code -1073741510.
+2022-03-16 21:44:39,157 INFO  - Finished ftp
+2022-03-19 21:42:22,037 DEBUG - Starting WinSW in service mode
+2022-03-19 21:42:22,274 INFO  - Starting node E:\FTPServer\bin\www
+2022-03-19 21:42:22,983 INFO  - Started process 7808
+2022-03-19 21:42:23,006 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-25 20:29:08,497 DEBUG - Starting WinSW in service mode
+2022-03-25 20:29:08,697 INFO  - Starting node E:\FTPServer\bin\www
+2022-03-25 20:29:09,375 INFO  - Started process 3100
+2022-03-25 20:29:09,391 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-25 20:35:02,484 INFO  - Stopping ftp
+2022-03-25 20:35:02,505 DEBUG - ProcessKill 3100
+2022-03-25 20:35:02,507 DEBUG - Stopping process 3100...
+2022-03-25 20:35:03,011 DEBUG - Process 3100 canceled with code -1073741510.
+2022-03-25 20:35:03,328 INFO  - Finished ftp
+2022-03-25 21:57:21,322 DEBUG - Starting WinSW in service mode
+2022-03-25 21:57:21,638 INFO  - Starting node E:\FTPServer\bin\www
+2022-03-25 21:57:22,347 INFO  - Started process 1412
+2022-03-25 21:57:22,362 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-03-25 22:03:26,205 INFO  - Stopping ftp
+2022-03-25 22:03:26,232 DEBUG - ProcessKill 1412
+2022-03-25 22:03:26,233 DEBUG - Stopping process 1412...
+2022-03-25 22:03:26,722 DEBUG - Process 1412 canceled with code -1073741510.
+2022-03-25 22:03:26,997 INFO  - Finished ftp
+2022-04-01 23:24:14,945 DEBUG - Starting WinSW in service mode
+2022-04-01 23:24:15,156 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-01 23:24:15,718 INFO  - Started process 2840
+2022-04-01 23:24:15,744 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-01 23:31:23,632 INFO  - Stopping ftp
+2022-04-01 23:31:23,633 DEBUG - ProcessKill 2840
+2022-04-01 23:31:23,634 DEBUG - Stopping process 2840...
+2022-04-01 23:31:23,757 DEBUG - Process 2840 canceled with code -1073741510.
+2022-04-01 23:31:23,911 INFO  - Finished ftp
+2022-04-02 21:32:51,162 DEBUG - Starting WinSW in service mode
+2022-04-02 21:32:51,354 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-02 21:32:51,927 INFO  - Started process 7840
+2022-04-02 21:32:51,945 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-02 21:36:38,537 INFO  - Stopping ftp
+2022-04-02 21:36:38,567 DEBUG - ProcessKill 7840
+2022-04-02 21:36:38,568 DEBUG - Stopping process 7840...
+2022-04-02 21:36:39,014 DEBUG - Process 7840 canceled with code -1073741510.
+2022-04-02 21:36:39,316 INFO  - Finished ftp
+2022-04-11 21:55:58,305 DEBUG - Starting WinSW in console mode
+2022-04-11 21:56:05,640 DEBUG - Starting WinSW in console mode
+2022-04-11 21:56:05,753 INFO  - Installing service 'FTPServer (ftp)'...
+2022-04-11 21:56:06,075 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-04-11 21:57:06,257 DEBUG - Starting WinSW in service mode
+2022-04-11 21:57:06,624 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-11 21:57:07,161 INFO  - Started process 5388
+2022-04-11 21:57:07,202 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-11 22:10:53,122 INFO  - Stopping ftp
+2022-04-11 22:10:53,146 DEBUG - ProcessKill 5388
+2022-04-11 22:10:53,148 DEBUG - Stopping process 5388...
+2022-04-11 22:10:53,287 DEBUG - Process 5388 canceled with code -1073741510.
+2022-04-11 22:10:53,372 INFO  - Finished ftp
+2022-04-13 14:14:00,597 DEBUG - Starting WinSW in service mode
+2022-04-13 14:14:00,799 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-13 14:14:00,977 INFO  - Started process 3648
+2022-04-13 14:14:00,990 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-13 17:14:23,360 DEBUG - Starting WinSW in service mode
+2022-04-13 17:14:23,953 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-13 17:14:24,097 INFO  - Started process 4876
+2022-04-13 17:14:24,111 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-13 19:42:44,465 DEBUG - Starting WinSW in service mode
+2022-04-13 19:42:45,116 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-13 19:42:45,361 INFO  - Started process 5056
+2022-04-13 19:42:45,373 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 09:04:46,080 DEBUG - Starting WinSW in service mode
+2022-04-14 09:04:46,732 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-14 09:04:47,069 INFO  - Started process 2620
+2022-04-14 09:04:47,138 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 11:27:00,757 DEBUG - Starting WinSW in service mode
+2022-04-14 11:27:01,342 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-14 11:27:01,636 INFO  - Started process 4876
+2022-04-14 11:27:01,648 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 11:31:45,996 DEBUG - Starting WinSW in service mode
+2022-04-14 11:31:46,590 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-14 11:31:46,842 INFO  - Started process 1136
+2022-04-14 11:31:46,855 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 13:19:48,756 DEBUG - Starting WinSW in service mode
+2022-04-14 13:19:49,308 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-14 13:19:49,435 INFO  - Started process 4632
+2022-04-14 13:19:49,448 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 17:57:20,838 DEBUG - Starting WinSW in service mode
+2022-04-14 17:57:22,373 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-14 17:57:22,675 INFO  - Started process 1016
+2022-04-14 17:57:22,745 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-14 22:44:17,580 INFO  - Stopping ftp
+2022-04-14 22:44:17,714 DEBUG - ProcessKill 1016
+2022-04-14 22:44:17,964 DEBUG - Stopping process 1016...
+2022-04-14 22:44:18,437 DEBUG - Process 1016 canceled with code -1073741510.
+2022-04-14 22:44:19,154 INFO  - Finished ftp
+2022-04-16 22:35:34,349 DEBUG - Starting WinSW in console mode
+2022-04-16 22:35:37,742 DEBUG - Starting WinSW in console mode
+2022-04-16 22:35:37,822 INFO  - Installing service 'FTPServer (ftp)'...
+2022-04-16 22:35:37,892 INFO  - Service 'FTPServer (ftp)' was installed successfully.
+2022-04-16 22:39:16,853 DEBUG - Starting WinSW in service mode
+2022-04-16 22:39:17,005 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-16 22:39:17,240 INFO  - Started process 8860
+2022-04-16 22:39:17,270 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-16 22:43:08,847 INFO  - Stopping ftp
+2022-04-16 22:43:08,877 DEBUG - ProcessKill 8860
+2022-04-16 22:43:08,884 DEBUG - Stopping process 8860...
+2022-04-16 22:43:08,936 DEBUG - Process 8860 canceled with code -1073741510.
+2022-04-16 22:43:08,949 INFO  - Finished ftp
+2022-04-16 22:43:11,372 DEBUG - Starting WinSW in service mode
+2022-04-16 22:43:11,552 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-16 22:43:11,616 INFO  - Started process 5600
+2022-04-16 22:43:11,639 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-18 22:13:52,607 DEBUG - Starting WinSW in service mode
+2022-04-18 22:13:53,041 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-18 22:13:54,723 INFO  - Started process 2600
+2022-04-18 22:13:54,742 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-18 22:19:23,255 INFO  - Stopping ftp
+2022-04-18 22:19:23,275 DEBUG - ProcessKill 2600
+2022-04-18 22:19:23,276 DEBUG - Stopping process 2600...
+2022-04-18 22:19:23,413 DEBUG - Process 2600 canceled with code -1073741510.
+2022-04-18 22:19:23,660 INFO  - Finished ftp
+2022-04-18 23:04:43,869 DEBUG - Starting WinSW in service mode
+2022-04-18 23:04:44,052 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-18 23:04:44,184 INFO  - Started process 5680
+2022-04-18 23:04:44,211 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-18 23:06:19,209 INFO  - Stopping ftp
+2022-04-18 23:06:19,212 DEBUG - ProcessKill 5680
+2022-04-18 23:06:19,215 DEBUG - Stopping process 5680...
+2022-04-18 23:06:19,291 DEBUG - Process 5680 canceled with code -1073741510.
+2022-04-18 23:06:19,314 INFO  - Finished ftp
+2022-04-20 21:44:02,453 DEBUG - Starting WinSW in service mode
+2022-04-20 21:44:02,616 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-20 21:44:04,486 INFO  - Started process 9180
+2022-04-20 21:44:04,509 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-20 21:52:45,042 INFO  - Stopping ftp
+2022-04-20 21:52:45,086 DEBUG - ProcessKill 9180
+2022-04-20 21:52:45,088 DEBUG - Stopping process 9180...
+2022-04-20 21:52:45,402 DEBUG - Process 9180 canceled with code -1073741510.
+2022-04-20 21:52:45,578 INFO  - Finished ftp
+2022-04-21 21:27:36,840 DEBUG - Starting WinSW in service mode
+2022-04-21 21:27:37,051 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-21 21:27:37,704 INFO  - Started process 748
+2022-04-21 21:27:37,723 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-21 21:49:06,102 INFO  - Stopping ftp
+2022-04-21 21:49:06,122 DEBUG - ProcessKill 748
+2022-04-21 21:49:06,124 DEBUG - Stopping process 748...
+2022-04-21 21:49:06,773 DEBUG - Process 748 canceled with code -1073741510.
+2022-04-21 21:49:07,400 INFO  - Finished ftp
+2022-04-23 18:51:56,411 DEBUG - Starting WinSW in service mode
+2022-04-23 18:51:56,543 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-23 18:51:56,972 INFO  - Started process 5148
+2022-04-23 18:51:57,004 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-23 20:05:51,951 INFO  - Stopping ftp
+2022-04-23 20:05:52,020 DEBUG - ProcessKill 5148
+2022-04-23 20:05:52,026 DEBUG - Stopping process 5148...
+2022-04-23 20:05:52,677 DEBUG - Process 5148 canceled with code -1073741510.
+2022-04-23 20:05:53,387 INFO  - Finished ftp
+2022-04-23 22:47:06,584 DEBUG - Starting WinSW in service mode
+2022-04-23 22:47:06,754 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-23 22:47:07,179 INFO  - Started process 4752
+2022-04-23 22:47:07,263 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-23 22:49:37,168 INFO  - Stopping ftp
+2022-04-23 22:49:37,168 DEBUG - ProcessKill 4752
+2022-04-23 22:49:37,171 DEBUG - Stopping process 4752...
+2022-04-23 22:49:37,249 DEBUG - Process 4752 canceled with code -1073741510.
+2022-04-23 22:49:37,323 INFO  - Finished ftp
+2022-04-26 21:50:43,020 DEBUG - Starting WinSW in service mode
+2022-04-26 21:50:43,591 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-26 21:50:44,491 INFO  - Started process 5080
+2022-04-26 21:50:44,639 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-26 21:53:03,910 INFO  - Stopping ftp
+2022-04-26 21:53:03,912 DEBUG - ProcessKill 5080
+2022-04-26 21:53:03,915 DEBUG - Stopping process 5080...
+2022-04-26 21:53:04,039 DEBUG - Process 5080 canceled with code -1073741510.
+2022-04-26 21:53:04,172 INFO  - Finished ftp
+2022-04-27 21:42:40,311 DEBUG - Starting WinSW in service mode
+2022-04-27 21:42:40,506 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-27 21:42:41,170 INFO  - Started process 9308
+2022-04-27 21:42:41,189 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-28 21:21:17,192 DEBUG - Starting WinSW in service mode
+2022-04-28 21:21:17,477 INFO  - Starting node E:\FTPServer\bin\www
+2022-04-28 21:21:18,380 INFO  - Started process 3664
+2022-04-28 21:21:18,408 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-04-28 21:27:20,474 INFO  - Stopping ftp
+2022-04-28 21:27:20,530 DEBUG - ProcessKill 3664
+2022-04-28 21:27:20,533 DEBUG - Stopping process 3664...
+2022-04-28 21:27:20,941 DEBUG - Process 3664 canceled with code -1073741510.
+2022-04-28 21:27:21,311 INFO  - Finished ftp
+2022-05-04 22:34:41,720 DEBUG - Starting WinSW in service mode
+2022-05-04 22:34:41,884 INFO  - Starting node E:\FTPServer\bin\www
+2022-05-04 22:34:42,278 INFO  - Started process 8428
+2022-05-04 22:34:42,295 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-05-04 22:40:15,608 INFO  - Stopping ftp
+2022-05-04 22:40:15,609 DEBUG - ProcessKill 8428
+2022-05-04 22:40:15,611 DEBUG - Stopping process 8428...
+2022-05-04 22:40:15,628 DEBUG - Process 8428 canceled with code -1073741510.
+2022-05-04 22:40:15,726 INFO  - Finished ftp
+2022-05-06 23:12:07,923 DEBUG - Starting WinSW in service mode
+2022-05-06 23:12:08,078 INFO  - Starting node E:\FTPServer\bin\www
+2022-05-06 23:12:08,602 INFO  - Started process 6436
+2022-05-06 23:12:08,616 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-05-06 23:16:40,958 INFO  - Stopping ftp
+2022-05-06 23:16:40,958 DEBUG - ProcessKill 6436
+2022-05-06 23:16:40,960 DEBUG - Stopping process 6436...
+2022-05-06 23:16:40,972 DEBUG - Process 6436 canceled with code -1073741510.
+2022-05-06 23:16:40,992 INFO  - Finished ftp
+2022-05-14 20:48:24,139 DEBUG - Starting WinSW in service mode
+2022-05-14 20:48:24,291 INFO  - Starting node E:\FTPServer\bin\www
+2022-05-14 20:48:24,817 INFO  - Started process 7660
+2022-05-14 20:48:24,855 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-05-14 21:25:49,829 INFO  - Stopping ftp
+2022-05-14 21:25:49,851 DEBUG - ProcessKill 7660
+2022-05-14 21:25:49,853 DEBUG - Stopping process 7660...
+2022-05-14 21:25:49,947 DEBUG - Process 7660 canceled with code -1073741510.
+2022-05-14 21:25:50,113 INFO  - Finished ftp
+2022-05-20 22:10:06,864 DEBUG - Starting WinSW in service mode
+2022-05-20 22:10:06,983 INFO  - Starting node E:\FTPServer\bin\www
+2022-05-20 22:10:07,394 INFO  - Started process 2972
+2022-05-20 22:10:07,408 DEBUG - Forwarding logs of the process System.Diagnostics.Process (node) to WinSW.RollingLogAppender
+2022-05-20 22:11:15,159 INFO  - Stopping ftp
+2022-05-20 22:11:15,159 DEBUG - ProcessKill 2972
+2022-05-20 22:11:15,160 DEBUG - Stopping process 2972...
+2022-05-20 22:11:15,171 DEBUG - Process 2972 canceled with code -1073741510.
+2022-05-20 22:11:15,175 INFO  - Finished ftp
