@@ -1,0 +1,22 @@
+ftpserver
+
+Getting Started
+To get you started you can simply clone the repository:
+
+    git clone https://github.com/eloraa/videofy-player
+
+and install the dependencies
+
+    yarn
+
+Prerequisites
+You need git to clone the repository. You can get git from
+http://git-scm.com/
+
+A number of node.js tools is necessary to initialize and test the project. You must have node.js and its package manager (npm) installed. You can get them from http://nodejs.org/. The tools/modules used in this project are listed in package.json and include yarn.
+
+Run the Application
+
+    yarn start
+
+I've created this project to share files over my local network. you can install it as a service using WinSW to run it seamlessly in the background.
