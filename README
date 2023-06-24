@@ -1,5 +1,7 @@
 ftpserver
 
+I've created this project to share files over my local network. you can install it as a service using WinSW to run it seamlessly in the background.
+
 Getting Started
 To get you started you can simply clone the repository:
 
@@ -18,5 +20,3 @@ A number of node.js tools is necessary to initialize and test the project. You m
 Run the Application
 
     yarn start
-
-I've created this project to share files over my local network. you can install it as a service using WinSW to run it seamlessly in the background.
